@@ -1,6 +1,6 @@
 {% set name = "schwimmbad" %}
-{% set version = "0.2.1" %}
-{% set sha256 = "e2574edb3c25b59d480001cdd77a73b6808340cad8c2a288fb1b85614277967d" %}
+{% set version = "0.3.0" %}
+{% set sha256 = "a4ba583cf71003f51ea1a9017d5a7d6a25d359a6adc25d4affa14d1abfec75a1" %}
 
 package:
   name: {{ name|lower }}
@@ -19,6 +19,7 @@ requirements:
   build:
     - python
     - setuptools
+    - six
   run:
     - python
     - six
