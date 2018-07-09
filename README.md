@@ -16,14 +16,15 @@ and MPI by providing a common interface.
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/schwimmbad-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/schwimmbad-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/schwimmbad-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/schwimmbad-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/schwimmbad-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/schwimmbad-feedstock/branch/master)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/schwimmbad-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/schwimmbad-feedstock)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/schwimmbad/badges/version.svg)](https://anaconda.org/conda-forge/schwimmbad)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/schwimmbad/badges/downloads.svg)](https://anaconda.org/conda-forge/schwimmbad)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-schwimmbad-green.svg)](https://anaconda.org/conda-forge/schwimmbad) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/schwimmbad.svg)](https://anaconda.org/conda-forge/schwimmbad) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/schwimmbad.svg)](https://anaconda.org/conda-forge/schwimmbad) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/schwimmbad.svg)](https://anaconda.org/conda-forge/schwimmbad) |
 
 Installing schwimmbad
 =====================
