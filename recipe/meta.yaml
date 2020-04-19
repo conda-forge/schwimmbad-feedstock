@@ -1,6 +1,6 @@
 {% set name = "schwimmbad" %}
-{% set version = "0.3.0" %}
-{% set sha256 = "a4ba583cf71003f51ea1a9017d5a7d6a25d359a6adc25d4affa14d1abfec75a1" %}
+{% set version = "0.3.1" %}
+{% set sha256 = "329d1fa326f6c69d8fbe47a388ea75d9e303e34c5d8bc5cbef4636e94af1955b" %}
 
 package:
   name: {{ name|lower }}
@@ -12,8 +12,8 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 3
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  number: 0
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
@@ -35,7 +35,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: 'A common interface for parallel processing pools'
+  summary: A common interface for parallel processing pools
 
   description: |
     schwimmbad enables easy switching between serial execution, multiprocessing,
