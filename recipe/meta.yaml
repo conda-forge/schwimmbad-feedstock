@@ -20,9 +20,11 @@ requirements:
     - pip
     - python
     - setuptools
+    - setuptools-scm
     - six
   run:
     - python
+    - setuptools
     - six
     - mpi4py  # [not win]
 
