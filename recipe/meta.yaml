@@ -1,6 +1,6 @@
 {% set name = "schwimmbad" %}
-{% set version = "0.3.2" %}
-{% set sha256 = "d453b735fcd0d4a5c5a6e18af2f72f678358f7614db3b78b6cd38d6b07debc9f" %}
+{% set version = "0.4.0" %}
+{% set sha256 = "8063c8c6cb7ad262b19f50b1b8badd6967be88f5d6bb52b5d417cc4d214e30ca" %}
 
 package:
   name: {{ name|lower }}
@@ -12,23 +12,25 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 4
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
+  skip: true  # [py < 39]
 
 requirements:
   build:
     - python                                 # [build_platform != target_platform]
     - cross-python_{{ target_platform }}     # [build_platform != target_platform]
   host:
+    - dill
+    - hatchling
+    - hatch-vcs
+    - multiprocess
     - pip
     - python
-    - setuptools
-    - setuptools-scm
-    - six
   run:
+    - dill
+    - multiprocess
     - python
-    - setuptools
-    - six
     - mpi4py  # [not win]
 
 test:
