@@ -20,15 +20,16 @@ requirements:
     - python                                 # [build_platform != target_platform]
     - cross-python_{{ target_platform }}     # [build_platform != target_platform]
   host:
+    - dill
+    - hatchling
+    - hatch-vcs
+    - multiprocess
     - pip
     - python
-    - setuptools
-    - setuptools-scm
-    - six
   run:
+    - dill
+    - multiprocess
     - python
-    - setuptools
-    - six
     - mpi4py  # [not win]
 
 test:
