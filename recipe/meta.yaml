@@ -1,6 +1,6 @@
 {% set name = "schwimmbad" %}
-{% set version = "0.4.0" %}
-{% set sha256 = "8063c8c6cb7ad262b19f50b1b8badd6967be88f5d6bb52b5d417cc4d214e30ca" %}
+{% set version = "0.4.1" %}
+{% set sha256 = "44a5e4f835c1d6add21d02cb18a0124e5f90d8a8722160d559e98a18f72b7d0f" %}
 
 package:
   name: {{ name|lower }}
